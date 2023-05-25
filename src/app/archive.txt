@@ -1,0 +1,225 @@
+NOTE: Codes that could be useful in the future goes here.
+
+/* SAVED FOR WHEN THERE ARE MORE SPORTS FITNESS COACHES
+        
+        Tabs navigation
+        <div className='pt-14'>
+          <ul
+            className='mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0'
+            role='tablist'
+            data-te-nav-ref
+          >
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-basketball'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-basketball'
+                data-te-nav-active
+                role='tab'
+                aria-controls='tabs-basketball'
+                aria-selected='true'
+              >
+                BASKETBALL
+              </a>
+            </li>
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-volleyball'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-volleyball'
+                role='tab'
+                aria-controls='tabs-volleyball'
+                aria-selected='false'
+              >
+                VOLLEYBALL
+              </a>
+            </li>
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-football'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-football'
+                role='tab'
+                aria-controls='tabs-football'
+                aria-selected='false'
+              >
+                FOOTBALL
+              </a>
+            </li>
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-badminton'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-badminton'
+                role='tab'
+                aria-controls='tabs-badminton'
+                aria-selected='false'
+              >
+                BADMINTON
+              </a>
+            </li>
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-tennis'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-tennis'
+                role='tab'
+                aria-controls='tabs-tennis'
+                aria-selected='false'
+              >
+                LAWN TENNIS
+              </a>
+            </li>
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-paddle'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-paddle'
+                role='tab'
+                aria-controls='tabs-paddle'
+                aria-selected='false'
+              >
+                PADDLE
+              </a>
+            </li>
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-swimming'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-swimming'
+                role='tab'
+                aria-controls='tabs-swimming'
+                aria-selected='false'
+              >
+                SWIMMING
+              </a>
+            </li>
+            <li role='presentation' className='flex-auto text-center'>
+              <a
+                href='#tabs-running'
+                className='my-2 font-montserrat text-base font-semibold block px-3 py-2 text-neutral-300 hover:text-gray hover:bg-neutral-200 data-[te-nav-active]:border-white data-[te-nav-active]:text-black data-[te-nav-active]:bg-white'
+                data-te-toggle='pill'
+                data-te-target='#tabs-running'
+                role='tab'
+                aria-controls='tabs-running'
+                aria-selected='false'
+              >
+                RUNNING
+              </a>
+            </li>
+            {/* <li role='presentation' className='flex-auto text-center'>
+            <a
+              href='#tabs-contact01'
+              className='disabled pointer-events-none my-2 block border-x-0 border-b-2 border-t-0 border-transparent bg-transparent px-7 pb-3.5 pt-4 text-xs font-medium leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent dark:text-neutral-600'
+              data-te-toggle='pill'
+              data-te-target='#tabs-contact01'
+              role='tab'
+              aria-controls='tabs-contact01'
+              aria-selected='false'
+            >
+              Contact
+            </a>
+          </li> 
+          </ul>
+
+          {/* Tabs content
+          <div className='mb-6'>
+            <div
+              className='hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-basketball'
+              role='tabpanel'
+              aria-labelledby='tabs-basketball-tab01'
+              data-te-tab-active
+            >
+              <div className='flex flex-wrap justify-center'>
+                {Basketball.memberes.map((member) => {
+                  return (
+                    <div
+                      key={member.name}
+                      className='w-auto px-8 py-4 flex flex-col justify-center items-center'
+                    >
+                      <Image
+                        src={member.profile.src}
+                        alt={`${member.name} ${member.lastName}`}
+                        height={128}
+                        width={128}
+                      />
+                      <h4 className='pt-2 font-montserrat font-extrabold text-base text-center text-white'>
+                        {member.name}
+                      </h4>
+                      <h4 className='font-montserrat font-extrabold text-base text-center text-white'>
+                        {member.lastName}
+                      </h4>
+                      <p className='font-montserrat font-normal text-sm text-center text-white'>
+                        {member.positionCompany}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            <div
+              className='hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-volleyball'
+              role='tabpanel'
+              aria-labelledby='tabs-volleyball-tab01'
+            >
+              volleyball content
+            </div>
+            <div
+              className='hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-football'
+              role='tabpanel'
+              aria-labelledby='tabs-football-tab01'
+            >
+              football content
+            </div>
+            <div
+              className='hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-badminton'
+              role='tabpanel'
+              aria-labelledby='tabs-badminton-tab01'
+            >
+              badminton content
+            </div>
+            <div
+              className='hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-tennis'
+              role='tabpanel'
+              aria-labelledby='tabs-tennis-tab01'
+            >
+              tennis content
+            </div>
+            <div
+              className='hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-paddle'
+              role='tabpanel'
+              aria-labelledby='tabs-paddle-tab01'
+            >
+              paddle content
+            </div>
+            <div
+              className='hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-swimming'
+              role='tabpanel'
+              aria-labelledby='tabs-swimming-tab01'
+            >
+              swimming content
+            </div>
+            <div
+              className='hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block'
+              id='tabs-running'
+              role='tabpanel'
+              aria-labelledby='tabs-running-tab01'
+            >
+              running content
+            </div>
+          </div>
+        </div>*/
