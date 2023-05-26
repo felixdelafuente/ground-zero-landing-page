@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import { Disclosure, Transition } from "@headlessui/react";
-import { Carousel } from 'flowbite-react';
+import { Carousel } from "flowbite-react";
 
 // import dynamic from "next/dynamic";
 // // @ts-ignore
@@ -23,13 +23,48 @@ import { Carousel } from 'flowbite-react';
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
-  // useEffect(() => {
-  //   const use = async () => {
-  //     (await import("tw-elements")).default;
-  //   };
-  //   use();
-  //   initTE({ Carousel, Tab, Animate });
-  // }, []);
+  useEffect(() => {
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+
+    // Callback for IntersectionObserver
+    const callback = function (entries: any[]) {
+      entries.forEach((entry) => {
+        // Is the element in the viewport?
+        if (entry.isIntersecting) {
+          // Add the fadeIn class:
+          if (document.getElementsByClassName("motion-safe:animate-fadeIn")) {
+            entry.target.classList.add("motion-safe:animate-fadeIn");
+          } else if (document.getElementsByClassName("motion-safe:animate-fadeInLtoR")) {
+            entry.target.classList.add("motion-safe:animate-fadeInLtoR");
+          }
+        } else {
+          // Otherwise remove the fadein class
+          if (document.getElementsByClassName("motion-safe:animate-fadeIn")) {
+            entry.target.classList.remove("motion-safe:animate-fadeIn");
+          } else if (
+            document.getElementsByClassName("motion-safe:animate-fadeInLtoR")
+          ) {
+            entry.target.classList.remove("motion-safe:animate-fadeInLtoR");
+          }
+          
+          
+        }
+      });
+    };
+
+    // Set up a new observer
+    const observer = new IntersectionObserver(callback);
+
+    // Loop through each of the target
+    targets.forEach(function (target) {
+      // Hide the element
+      target.classList.add("opacity-0");
+
+      // Add the element to the watcher
+      observer.observe(target);
+    });
+  }, []);
+
   return (
     <main className='double-bg w-screen overflow-hidden '>
       {/* NAVIGATION BAR */}
@@ -60,11 +95,11 @@ export default function Home() {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0'>
+              <ul className='items-center justify-center space-y-8 md:flex md:space-y-0'>
                 <li>
                   <Link
                     href='#about'
-                    className='py-6 px-2 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                    className='py-6 px-6 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
                   >
                     ABOUT US
                   </Link>
@@ -72,7 +107,7 @@ export default function Home() {
                 <li>
                   <Link
                     href='#services'
-                    className='py-6 px-2 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                    className='py-6 px-6 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
                   >
                     OUR SERVICES
                   </Link>
@@ -86,7 +121,7 @@ export default function Home() {
                 <li>
                   <Link
                     href='#team'
-                    className='py-6 px-2 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                    className='py-6 px-6 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
                   >
                     MEET THE TEAM
                   </Link>
@@ -102,7 +137,7 @@ export default function Home() {
         className='z-20 px-4 md:px-12 lg:px-32 h-screen w-screen bg-cover bg-center bg-no-repeat flex items-center bg-gray'
         style={{ backgroundImage: `url(${Images.HeaderBg.src})` }}
       >
-        <div className='w-full lg:w-2/4 xl:1/3'>
+        <div className='w-full lg:w-2/4 xl:1/3 motion-safe:animate-fadeInLtoR js-show-on-scroll'>
           <h1 className='font-montserrat font-extrabold text-xl md:text-3xl lg:text-2xl text-white'>
             UNLEASH YOUR EMPLOYEES&apos;
           </h1>
@@ -122,21 +157,20 @@ export default function Home() {
       <section
         id='about'
         className='pr-4 md:pr-8 lg:pr-32 pt-36 w-full flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:grid-flow-row gap-10 md:gap-10 lg:gap-20'
-        data-te-animation-init
-        data-te-animation-start='onScroll'
-        data-te-animation-on-scroll='repeat'
-        data-te-animation-show-on-load='false'
-        data-te-animation='[slide-right_1s_ease-in-out]'
       >
-        <div className=''>
-          <Image src={Images.SportsEvent} alt={"Various sports events"} />
+        <div>
+          <Image
+            src={Images.SportsEvent}
+            alt={"Various sports events"}
+            className='motion-safe:animate-fadeInLtoR js-show-on-scroll'
+          />
         </div>
         <div className='pl-4 pr-4 md:pl-14 md:pr-14 lg:pr-0 lg:pl-0'>
-          <h1 className='pt-6 lg:pt-0 text-start lg:text-end font-montserrat font-extrabold text-2xl md:text-3xl lg:text-5xl text-white'>
+          <h1 className='pt-6 lg:pt-0 text-start lg:text-end font-montserrat font-extrabold text-2xl md:text-3xl lg:text-5xl text-white motion-safe:animate-fadeIn js-show-on-scroll'>
             IGNITE PRODUCTIVITY AND PERFORMANCE THROUGH WELLNESS AND SPORTS
             ACTIVITIES
           </h1>
-          <p className='pt-6 text-start lg:text-end font-montserrat font-normal text-base text-white'>
+          <p className='pt-6 text-start lg:text-end font-montserrat font-normal text-base text-white motion-safe:animate-fadeIn js-show-on-scroll'>
             Supercharge your company&apos;s productivity and performance with
             our dynamic sports and wellness program. Through our proven
             strategies and invigorating activities, we empower your team to
@@ -156,19 +190,11 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section
-        id='services'
-        className='px-0 pt-36 w-full'
-        data-te-animation-init
-        data-te-animation-start='onScroll'
-        data-te-animation-on-scroll='repeat'
-        data-te-animation-show-on-load='false'
-        data-te-animation='[slide-right_1s_ease-in-out]'
-      >
-        <h1 className='px-4 md:px-8 lg:px-32 text-center font-montserrat font-extrabold text-2xl md:text-3xl lg:text-5xl text-white'>
+      <section id='services' className='px-0 pt-36 w-full'>
+        <h1 className='px-4 md:px-8 lg:px-32 text-center font-montserrat font-extrabold text-2xl md:text-3xl lg:text-5xl text-white motion-safe:animate-fadeIn js-show-on-scroll'>
           PRIMARY SERVICES FOR CORPORATE AND ORGANIZATIONS
         </h1>
-        <p className='px-4 md:px-8 lg:px-32 mt-8 text-center font-montserrat text-white'>
+        <p className='px-4 md:px-8 lg:px-32 mt-8 text-center font-montserrat text-white motion-safe:animate-fadeIn js-show-on-scroll'>
           Ground Zero Company is a pioneering provider of personalized wellness
           and sports activities for UAE companies. Their expert team designs
           tailored programs that promote teamwork, collaboration, and work-life
@@ -410,9 +436,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FITNESS SPORTS SECTION */}
+      {/* SPECIAL SERVICES SECTION */}
       <section className='px-4 md:px-14 lg:px-32 mt-36 w-full'>
-        <h1 className='text-center font-montserrat font-extrabold text-2xl md:text-4xl lg:text-6xl text-white'>
+        <h1 className='text-center font-montserrat font-extrabold text-2xl md:text-4xl lg:text-6xl text-white motion-safe:animate-fadeIn js-show-on-scroll'>
           SPECIAL SERVICES
         </h1>
         <div className='pt-14 flex flex-col md:flex-row'>
@@ -421,7 +447,7 @@ export default function Home() {
               {({ open }) => (
                 /* Use the `open` state to conditionally change the direction of an icon. */
                 <>
-                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white  text-xl font-montserrat font-bold text-white hover:text-black text-left'>
+                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white text-xl font-montserrat font-bold text-white hover:text-black text-left motion-safe:animate-fadeIn js-show-on-scroll'>
                     <FaCaretRight
                       className={open ? "rotate-90 transform mr-2" : "mr-2"}
                     />
@@ -453,7 +479,7 @@ export default function Home() {
               {({ open }) => (
                 /* Use the `open` state to conditionally change the direction of an icon. */
                 <>
-                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white  text-xl font-montserrat font-bold text-white hover:text-black text-left'>
+                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white text-xl font-montserrat font-bold text-white hover:text-black text-left motion-safe:animate-fadeIn js-show-on-scroll'>
                     <FaCaretRight
                       className={open ? "rotate-90 transform mr-2" : "mr-2"}
                     />
@@ -483,7 +509,7 @@ export default function Home() {
               {({ open }) => (
                 /* Use the `open` state to conditionally change the direction of an icon. */
                 <>
-                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white  text-xl font-montserrat font-bold text-white hover:text-black text-left'>
+                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white text-xl font-montserrat font-bold text-white hover:text-black text-left motion-safe:animate-fadeIn js-show-on-scroll'>
                     <FaCaretRight
                       className={open ? "rotate-90 transform mr-2" : "mr-2"}
                     />
@@ -514,7 +540,7 @@ export default function Home() {
               {({ open }) => (
                 /* Use the `open` state to conditionally change the direction of an icon. */
                 <>
-                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white  text-xl font-montserrat font-bold text-white hover:text-black text-left'>
+                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white text-xl font-montserrat font-bold text-white hover:text-black text-left motion-safe:animate-fadeIn js-show-on-scroll'>
                     <FaCaretRight
                       className={open ? "rotate-90 transform mr-2" : "mr-2"}
                     />
@@ -543,7 +569,7 @@ export default function Home() {
               {({ open }) => (
                 /* Use the `open` state to conditionally change the direction of an icon. */
                 <>
-                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white  text-xl font-montserrat font-bold text-white hover:text-black text-left'>
+                  <Disclosure.Button className='w-full px-2 py-2 mb-4 flex items-center bg-gradient-to-r from-black hover:from-white text-xl font-montserrat font-bold text-white hover:text-black text-left motion-safe:animate-fadeIn js-show-on-scroll'>
                     <FaCaretRight
                       className={open ? "rotate-90 transform mr-2" : "mr-2"}
                     />
@@ -582,19 +608,11 @@ export default function Home() {
       </section>
 
       {/* TEAM SECTION */}
-      <section
-        id='team'
-        className='px-4 md:px-14 lg:px-32 pt-36 w-full'
-        data-te-animation-init
-        data-te-animation-start='onScroll'
-        data-te-animation-on-scroll='repeat'
-        data-te-animation-show-on-load='false'
-        data-te-animation='[slide-right_1s_ease-in-out]'
-      >
-        <h1 className='text-center font-montserrat font-extrabold text-2xl md:text-4xl lg:text-6xl text-white'>
+      <section id='team' className='px-4 md:px-14 lg:px-32 pt-36 w-full'>
+        <h1 className='text-center font-montserrat font-extrabold text-2xl md:text-4xl lg:text-6xl text-white motion-safe:animate-fadeIn js-show-on-scroll'>
           MEET THE TEAM
         </h1>
-        <div className='pt-14 flex flex-wrap justify-center'>
+        <div className='pt-14 flex flex-wrap justify-center motion-safe:animate-fadeIn js-show-on-scroll'>
           {Company.members.map((member) => {
             return (
               <div

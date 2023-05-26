@@ -24,7 +24,24 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        fadeIn: "fadeIn 1s ease-in forwards",
+        fadeInLtoR: "fadeInLtoR 1s ease-in forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(50%)" },
+          "100%": { opacity: 1, transform: "translateY(0%)" },
+        },
+        fadeInLtoR: {
+          "0%": { opacity: 0, transform: "translateX(-100%)" },
+          "100%": { opacity: 1, transform: "translateX(0%)" },
+        },
+      },
+      variants: {
+        animation: ["motion-safe"],
+      },
     },
   },
-  plugins: [require("tw-elements/dist/plugin.cjs"), require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin")],
 };
