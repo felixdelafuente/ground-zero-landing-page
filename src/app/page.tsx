@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              className={`flex-1 justify-self-center pb-8 lg:pb-0 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? "block" : "hidden"
               }`}
             >
@@ -99,7 +99,7 @@ export default function Home() {
                 <li>
                   <Link
                     href='#about'
-                    className='py-6 px-6 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                    className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
                   >
                     ABOUT US
                   </Link>
@@ -107,7 +107,7 @@ export default function Home() {
                 <li>
                   <Link
                     href='#services'
-                    className='py-6 px-6 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                    className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
                   >
                     OUR SERVICES
                   </Link>
@@ -121,7 +121,7 @@ export default function Home() {
                 <li>
                   <Link
                     href='#team'
-                    className='py-6 px-6 text-white hover:text-black bg-transparent hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                    className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
                   >
                     MEET THE TEAM
                   </Link>
