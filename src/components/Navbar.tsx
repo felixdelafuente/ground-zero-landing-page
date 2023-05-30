@@ -1,14 +1,15 @@
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Images } from "@/core";
 import Image from "next/image";
 
-export default function Home() {
+export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <nav className=' w-screen bg-darkGray shadow fixed top-0 z-50'>
-      <div className='justify-between px-4 mx-2 md:mx-4 lg:mx-16 md:items-center md:flex md:px-8'>
+      <div className='justify-between mx-4 md:mx-8 lg:mx-24 md:items-center md:flex md:px-8'>
         <div>
           <div className='flex items-center justify-between py-2 md:py-4 md:block'>
             <a href='#'>
@@ -30,25 +31,40 @@ export default function Home() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center pb-8 lg:pb-0 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0'>
-              <li className='text-white font-montserrat font-bold text-sm'>
-                <Link href='#about'>ABOUT</Link>
+            <ul className='items-center justify-center space-y-8 md:flex md:space-y-0'>
+              <li>
+                <Link
+                  href='/'
+                  className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                >
+                  Home
+                </Link>
               </li>
-              <li className='text-white font-montserrat font-bold text-sm'>
-                <Link href='#services'>SERVICES</Link>
+              <li>
+                <Link
+                  href='/ground-zero-club'
+                  className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                >
+                  Ground Zero Club
+                </Link>
               </li>
-              <li className='text-white font-montserrat font-bold text-sm'>
-                <Link href='#coaches'>COACHES</Link>
-              </li>
-              <li className='text-white font-montserrat font-bold text-sm'>
-                <Link href='#sports'>SPORTS</Link>
-              </li>
-              <li className='text-white font-montserrat font-bold text-sm'>
-                <Link href='#company'>COMPANY</Link>
+              {/* <li className='text-white font-montserrat font-bold text-sm'>
+                  <Link href='#members'>MEMBERS</Link>
+                </li>
+                <li className='text-white font-montserrat font-bold text-sm'>
+                  <Link href='#sports'>SPORTS</Link>
+                </li> */}
+              <li>
+                <Link
+                  href='#team'
+                  className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                >
+                  MEET THE TEAM
+                </Link>
               </li>
             </ul>
           </div>

@@ -68,69 +68,7 @@ export default function Home() {
   return (
     <main className='double-bg w-screen overflow-hidden '>
       {/* NAVIGATION BAR */}
-      <nav className=' w-screen bg-darkGray shadow fixed top-0 z-50'>
-        <div className='justify-between mx-4 md:mx-8 lg:mx-24 md:items-center md:flex md:px-8'>
-          <div>
-            <div className='flex items-center justify-between py-2 md:py-4 md:block'>
-              <a href='#'>
-                <Image src={Images.LogoSm} alt='Ground Zero Logo' height={36} />
-              </a>
-              <div className='md:hidden'>
-                <button
-                  className='p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border'
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <FaTimes className='text-white' />
-                  ) : (
-                    <FaBars className='text-white' />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className={`flex-1 justify-self-center pb-8 lg:pb-0 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? "block" : "hidden"
-              }`}
-            >
-              <ul className='items-center justify-center space-y-8 md:flex md:space-y-0'>
-                <li>
-                  <Link
-                    href='#about'
-                    className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
-                  >
-                    ABOUT US
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#services'
-                    className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
-                  >
-                    OUR SERVICES
-                  </Link>
-                </li>
-                {/* <li className='text-white font-montserrat font-bold text-sm'>
-                  <Link href='#members'>MEMBERS</Link>
-                </li>
-                <li className='text-white font-montserrat font-bold text-sm'>
-                  <Link href='#sports'>SPORTS</Link>
-                </li> */}
-                <li>
-                  <Link
-                    href='#team'
-                    className='py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
-                  >
-                    MEET THE TEAM
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+      
 
       {/* HEADER SECTION */}
       <section
