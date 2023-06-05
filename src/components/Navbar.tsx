@@ -46,10 +46,18 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href='/ground-zero-club'
+                  href='/sports'
                   className='transition duration-300 py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
                 >
-                  GROUND ZERO CLUB
+                  SPORTS
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/legends-club'
+                  className='transition duration-300 py-6 px-6 text-white lg:hover:text-black bg-transparent lg:hover:bg-gradient-to-t from-white font-montserrat font-bold text-sm'
+                >
+                  LEGENDS CLUB
                 </Link>
               </li>
               <li>

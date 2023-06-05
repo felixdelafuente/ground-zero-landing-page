@@ -15,6 +15,7 @@ import TextureBg from "src/assets/images/texture-bg.png";
 import ContactFormBg from "src/assets/images/contact-form-bg.jpg";
 import GroundZeroClubHeaderBg from "src/assets/images/ground-zero-club-header.png";
 import ContactUsHeaderBg from "src/assets/images/contact-us-header.png";
+import SportsHeaderBg from "src/assets/images/sports-header.png";
 import HeaderLeftTriangle from "src/assets/images/header-left-triangle.png";
 import HeaderRightTriangle from "src/assets/images/header-right-triangle.png";
 import BodyLeftTriangle from "src/assets/images/body-left-triangle.png";
@@ -22,6 +23,11 @@ import BodyRightTriangle from "src/assets/images/body-right-triangle.png";
 import SportsEvent1 from "src/assets/images/sports-event-1.png";
 import SportsEvent2 from "src/assets/images/sports-event-2.png";
 import SportsEvent3 from "src/assets/images/sports-event-3.png";
+import Sports1 from "src/assets/images/sports-1.png";
+import Sports2 from "src/assets/images/sports-2.png";
+import Sports3 from "src/assets/images/sports-3.png";
+import Sports4 from "src/assets/images/sports-4.png";
+import Sports5 from "src/assets/images/sports-5.png";
 
 export const Images = {
   LogoSm,
@@ -41,6 +47,7 @@ export const Images = {
   ContactFormBg,
   GroundZeroClubHeaderBg,
   ContactUsHeaderBg,
+  SportsHeaderBg,
   HeaderLeftTriangle,
   HeaderRightTriangle,
   BodyLeftTriangle,
@@ -48,4 +55,9 @@ export const Images = {
   SportsEvent1,
   SportsEvent2,
   SportsEvent3,
+  Sports1,
+  Sports2,
+  Sports3,
+  Sports4,
+  Sports5,
 };
