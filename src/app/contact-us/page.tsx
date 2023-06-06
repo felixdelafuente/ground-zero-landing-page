@@ -5,7 +5,7 @@ import Divider from "../../components/Navbar";
 import { FaCheckCircle } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Partners } from "@/contents";
+import { CompanyMembers } from "@/contents";
 import { Tooltip } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,7 +49,7 @@ export default function ContactUs() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <div className='pt-14 h-auto lg:h-screen'>
+        <div className='pt-14 h-auto lg:h-screen' data-aos='fade-up'>
           <Carousel className='relative w-full h-full md:h-1/3 lg:h-3/4'>
             {CompanyImages.images.map((image) => {
               return (
@@ -62,6 +62,40 @@ export default function ContactUs() {
               );
             })}
           </Carousel>
+        </div>
+      </section>
+
+      {/* TEAM SECTION */}
+      <section className='px-4 md:px-8 lg:px-32 w-full flex flex-col'>
+        <h1
+          className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-3xl text-white'
+          data-aos='fade-up'
+        >
+          MEET THE TEAM
+        </h1>
+        <div className='mt-14 w-full flex flex-wrap items-center justify-center'>
+          {CompanyMembers.members.map((member) => {
+            return (
+              <div
+                key={member.name}
+                className='w-auto px-8 py-4 flex flex-col justify-center items-center mx-0 my-4 md:m-4 lg:m-8'
+                data-aos='fade-up'
+              >
+                <Image
+                  src={member.profile.src}
+                  alt={member.name}
+                  width={128}
+                  height={128}
+                />
+                <h4 className='pt-2 font-montserrat font-extrabold text-base text-center text-white'>
+                  {member.name}
+                </h4>
+                <p className='font-montserrat font-normal text-sm text-center text-white'>
+                  {member.position}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </section>
 
