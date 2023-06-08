@@ -72,34 +72,35 @@ export default function Home() {
       {/* ABOUT SECTION */}
       <section
         id='about'
-        className='pr-4 md:pr-8 lg:pr-32 pt-36 w-full h-screen flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:grid-flow-row space gap-10 md:gap-10 lg:gap-20'
+        className='pr-4 md:pr-8 lg:pr-32 pt-36 w-full flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:grid-flow-row space gap-10 md:gap-10 lg:gap-20'
       >
-        <div className='flex w-1/2 space-x-4'>
+        <div className='flex w-full lg:w-1/2 lg:space-x-4'>
           <Image
             src={Images.SportsEvent1}
             alt={"Various sports events"}
-            className='object-contain'
+            className='hidden lg:block object-contain'
             data-aos='fade-right'
             data-aos-delay='600'
           />
           <Image
             src={Images.SportsEvent2}
             alt={"Various sports events"}
-            className='object-contain'
+            className='hidden lg:block object-contain'
             data-aos='fade-right'
             data-aos-delay='300'
           />
           <Image
             src={Images.SportsEvent3}
             alt={"Various sports events"}
-            className='object-contain'
+            className='hidden lg:block object-contain'
             data-aos='fade-right'
           />
-          {/* <Image
+          <Image
             src={Images.SportsEvent}
             alt={"Various sports events"}
             data-aos='fade-right'
-          /> */}
+            className='inline-block lg:hidden'
+          />
         </div>
         <div className='pl-4 pr-4 md:pl-14 md:pr-14 lg:pr-0 lg:pl-0'>
           <h1
@@ -164,7 +165,7 @@ export default function Home() {
                   key={service.title}
                   className='h-full pl-0 lg:pl-20 shadow bg-gradient-to-br from-darkGray to-neutral-800 relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none'
                 >
-                  <div className='h-full w-full flex flex-col-reverse lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1'>
+                  <div className='h-full w-full flex flex-col-reverse justify-end lg:justify-normal lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1'>
                     <div className='md:h-80 lg:h-full lg:col-span-2 p-12'>
                       <h3 className='font-montserrat font-extrabold text-2xl md:text-3xl lg:text-3xl text-transparent text-stroke'>
                         {service.title}
@@ -248,8 +249,9 @@ export default function Home() {
           WHAT OUR LEGENDS SAY ABOUT US
         </h1>
         <div className='pt-14'>
+          {/* Desktop */}
           <Carousel
-            className='relative px-4 md:px-12 lg:px-28 h-auto lg:h-80 w-full overflow-hidden rounded-none'
+            className='hidden lg:block relative px-4 md:px-12 lg:px-28 h-auto lg:h-80 w-full overflow-hidden rounded-none'
             indicators={false}
             slideInterval={5000}
           >
@@ -332,6 +334,58 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              );
+            })}
+          </Carousel>
+          {/* Mobile to Tablet */}
+          <Carousel
+            className='lg:hidden px-4 md:px-12 h-auto w-full overflow-hidden rounded-none'
+            indicators={false}
+            slideInterval={5000}
+          >
+            {Testimonials.testimonialsMobile.map((testimonial) => {
+              return (
+                <>
+                  <div
+                    className='h-full w-full flex flex-col md:grid md:grid-cols-3 md:grid-flow-row md:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800'
+                    data-aos='fade-right'
+                  >
+                    <div>
+                      <Image
+                        className='col-span-1 object-cover object-center h-full'
+                        src={testimonial.image}
+                        alt={testimonial.person}
+                      />
+                    </div>
+
+                    <div className='flex flex-col justify-start h-full col-span-2 p-12'>
+                      <Image
+                        className='absolute right-0 top-0'
+                        src={Images.EndQuote}
+                        alt=''
+                        data-aos='fade-down'
+                        data-aos-delay='100'
+                      />
+                      <h3 className='font-montserrat' data-aos='fade-up'>
+                        <span className='font-extrabold text-lg md:text-xl text-white'>
+                          {testimonial.person}
+                        </span>
+                        <br />
+                        <span className='text-sm text-white'>
+                          <i>{testimonial.title}</i>
+                        </span>
+                      </h3>
+
+                      <p
+                        className='pt-6 font-montserrat font-normal text-sm text-white'
+                        data-aos='fade-up'
+                        data-aos-delay='300'
+                      >
+                        {testimonial.statement}
+                      </p>
+                    </div>
+                  </div>
+                </>
               );
             })}
           </Carousel>

@@ -103,4 +103,42 @@ export const Testimonials = {
       statement2: `The Ground Zero program has helped me alot in span of 1 month, It has helped me alot with my confidence and on how I play the game.`,
     },
   ],
+  testimonialsMobile: [
+    {
+      image: Images.RhoxineValenzuela,
+      person: `Rhoxine Valenzuela-Magtagnob`,
+      title: `Business Owner, Shokudo Connect Restaurant`,
+      statement: `Ground Zero is a reliable and committed merchant partner, bringing detailed agreements and sharing ideas for business progression in health, wellness, and fitness. They prioritize commitment, integrity, and leaving a lasting legacy.`,
+    },
+    {
+      image: Images.JoshreyVasquez,
+      person: `Joshrey Vasquez`,
+      title: `Student, Legends Basketball Program`,
+      statement: `What's good? What's good about the program is the intensive training What's not good? Not gonna lie there's nothing wrong with the program it's all good`,
+    },
+    {
+      image: Images.FrancisLavarias,
+      person: `Francis Lavarias`,
+      title: `Parent, Legends Basketball Program`,
+      statement: `Than you very much to Ground Zero for their commitment and excellent training services to my son’s basketball skills. Kudos to coach Carl for making it as a fun and at the same time engaging experience.`,
+    },
+    {
+      image: Images.AarenSalvador,
+      person: `AAREN SALVADOR`,
+      title: `Student, Legends Basketball Program`,
+      statement: `The Ground Zero Legends Program is a top-notch basketball academy that improves shooting skills and provides excellent support during practices and games, led by Coach Labueno Casas and Coach Carl Romero.`,
+    },
+    {
+      image: Images.NobertoJr,
+      person: `Norberto Jr.`,
+      title: `Parent, Legends Basketball Program`,
+      statement: `Ground Zero's program, led by Coach Carl and Coach Lab, has successfully improved my son's basketball skills, offering knowledgeable guidance and excellent support. Their responsiveness and ease of interaction make them highly recommended for anyone seeking to enhance their game.`,
+    },
+    {
+      image: Images.NathanielFaustino,
+      person: `Nathaniel Faustino`,
+      title: `Student, Legends Basketball Program`,
+      statement: `The Ground Zero program has helped me alot in span of 1 month, It has helped me alot with my confidence and on how I play the game.`,
+    },
+  ],
 };
