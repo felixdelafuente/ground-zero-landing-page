@@ -50,6 +50,12 @@ import AarenSalvador from "src/assets/images/aaren-salvador.png";
 import NobertoJr from "src/assets/images/noberto-jr.png";
 import NathanielFaustino from "src/assets/images/nathaniel-faustino.png";
 import EndQuote from "src/assets/images/end-quote.png";
+import AboutUsSlide1 from "src/assets/images/about-us-slide-1.png";
+import AboutUsSlide2 from "src/assets/images/about-us-slide-2.png";
+import AboutUsSlide3 from "src/assets/images/about-us-slide-3.png";
+import AboutUsSlide4 from "src/assets/images/about-us-slide-4.png";
+import AboutUsSlide5 from "src/assets/images/about-us-slide-5.png";
+import AboutUsSlide6 from "src/assets/images/about-us-slide-6.png";
 
 export const Images = {
   LogoSm,
@@ -104,4 +110,10 @@ export const Images = {
   NobertoJr,
   NathanielFaustino,
   EndQuote,
+  AboutUsSlide1,
+  AboutUsSlide2,
+  AboutUsSlide3,
+  AboutUsSlide4,
+  AboutUsSlide5,
+  AboutUsSlide6,
 };

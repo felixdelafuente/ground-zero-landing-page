@@ -72,37 +72,38 @@ export default function Home() {
       {/* ABOUT SECTION */}
       <section
         id='about'
-        className='pr-4 md:pr-8 lg:pr-32 pt-36 w-full flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:grid-flow-row space gap-10 md:gap-10 lg:gap-20'
+        className='pt-36 w-full lg:h-screen flex flex-col lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:grid-flow-row space gap-10 md:gap-10 lg:gap-20'
       >
-        <div className='flex w-full lg:w-1/2 lg:space-x-4'>
+        <div className='hidden lg:flex w-1/2 space-x-4'>
           <Image
             src={Images.SportsEvent1}
             alt={"Various sports events"}
-            className='hidden lg:block object-contain'
+            className='object-cover'
             data-aos='fade-right'
             data-aos-delay='600'
           />
           <Image
             src={Images.SportsEvent2}
             alt={"Various sports events"}
-            className='hidden lg:block object-contain'
+            className='object-cover'
             data-aos='fade-right'
             data-aos-delay='300'
           />
           <Image
             src={Images.SportsEvent3}
             alt={"Various sports events"}
-            className='hidden lg:block object-contain'
+            className='object-cover'
             data-aos='fade-right'
           />
+        </div>
+        <div className='block lg:hidden'>
           <Image
             src={Images.SportsEvent}
             alt={"Various sports events"}
             data-aos='fade-right'
-            className='inline-block lg:hidden'
           />
         </div>
-        <div className='pl-4 pr-4 md:pl-14 md:pr-14 lg:pr-0 lg:pl-0'>
+        <div className='pr-4 md:pr-8 lg:pr-32 lg:pl-0'>
           <h1
             className='pt-6 lg:pt-0 text-start lg:text-end font-montserrat font-extrabold text-2xl md:text-3xl lg:text-5xl text-white'
             data-aos='fade-up'

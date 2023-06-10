@@ -41,16 +41,16 @@ export default function ContactUs() {
           className='mt-8 text-center font-montserrat text-white'
           data-aos='fade-up'
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Is a nurturing organization and community for sports enthusiast. Build
+          to provide 360 wellness and sports activities to its members. Our
+          mission is to ignite spirits and empower legends through 360 wellness
+          and sports activities, transforming individuals into extraordinary
+          beings of character and achievement. With a focus on values and growth
+          mindset, we enable our members to surpass limits, conquer challenges,
+          and leave a legendary legacy.
         </p>
-        <div className='pt-14 h-auto lg:h-screen' data-aos='fade-up'>
-          <Carousel className='relative w-full h-full md:h-1/3 lg:h-3/4'>
+        <div className='pt-14 h-96 lg:h-screen' data-aos='fade-up'>
+          <Carousel className='relative w-full h-full lg:h-3/4'>
             {CompanyImages.images.map((image) => {
               return (
                 <Image
@@ -66,7 +66,7 @@ export default function ContactUs() {
       </section>
 
       {/* TEAM SECTION */}
-      <section className='px-4 md:px-8 lg:px-32 w-full flex flex-col'>
+      <section className='pt-36 lg:pt-0 px-4 md:px-8 lg:px-32 w-full flex flex-col'>
         <h1
           className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-3xl text-white'
           data-aos='fade-up'

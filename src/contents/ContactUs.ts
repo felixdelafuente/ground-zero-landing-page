@@ -3,24 +3,28 @@ import { Images } from "@/core";
 export const CompanyImages = {
   images: [
     {
-      image: Images.HeaderBg,
-      alt: "",
+      image: Images.AboutUsSlide1,
+      alt: "Basketball training",
     },
     {
-      image: Images.HeaderBg,
-      alt: "",
+      image: Images.AboutUsSlide2,
+      alt: "Basketball group photo",
     },
     {
-      image: Images.HeaderBg,
-      alt: "",
+      image: Images.AboutUsSlide3,
+      alt: "Basketball group photo",
     },
     {
-      image: Images.HeaderBg,
-      alt: "",
+      image: Images.AboutUsSlide4,
+      alt: "Basketball group photo",
     },
     {
-      image: Images.HeaderBg,
-      alt: "",
+      image: Images.AboutUsSlide5,
+      alt: "Swimming Class",
+    },
+    {
+      image: Images.AboutUsSlide6,
+      alt: "Volleyball training group photo",
     },
   ],
 };
