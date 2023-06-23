@@ -56,6 +56,9 @@ import AboutUsSlide3 from "src/assets/images/about-us-slide-3.png";
 import AboutUsSlide4 from "src/assets/images/about-us-slide-4.png";
 import AboutUsSlide5 from "src/assets/images/about-us-slide-5.png";
 import AboutUsSlide6 from "src/assets/images/about-us-slide-6.png";
+import DividerBg1 from "src/assets/images/divider-bg-1.png";
+import DividerBg2 from "src/assets/images/divider-bg-2.png";
+import QRCode from "src/assets/images/qr-code.png";
 
 export const Images = {
   LogoSm,
@@ -116,4 +119,7 @@ export const Images = {
   AboutUsSlide4,
   AboutUsSlide5,
   AboutUsSlide6,
+  DividerBg1,
+  DividerBg2,
+  QRCode,
 };

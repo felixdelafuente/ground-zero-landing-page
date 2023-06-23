@@ -73,7 +73,7 @@ export default function LegendsClub() {
         </h1>
         <div className='mt-14 w-full flex flex-col lg:flex-row space-x-0 lg:space-x-20 space-y-10 lg:space-y-0 items-center justify-center'>
           <div
-            className='transition duration-300 w-full lg:w-96 p-8 bg-gradient-to-br from-neutral-700 to-neutral-500 shadow hover:shadow-lg -translate-y-0 hover:-translate-y-2 rounded-sm'
+            className='transition duration-300 w-full lg:w-96 p-8 bg-gradient-to-br from-neutral-700 to-neutral-500 shadow hover:shadow-lg -translate-y-0 hover:-translate-y-2 rounded'
             data-aos='fade-up'
             data-aos-delay='300'
           >
@@ -95,7 +95,7 @@ export default function LegendsClub() {
                 96 AED / annually
               </span>
             </h2>
-            <button className='transition duration-300 w-full px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-transparent hover:bg-white rounded-sm'>
+            <button className='transition duration-300 w-full px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-transparent hover:bg-white rounded'>
               BE A LEGEND
             </button>
             <ul className='pt-4 font-montserrat font-normal text-sm text-white'>
@@ -140,7 +140,7 @@ export default function LegendsClub() {
             </ul>
           </div>
           <div
-            className='transition duration-300 w-full lg:w-96 p-8 bg-gradient-to-br from-neutral-200 to-white shadow hover:shadow-lg -translate-y-0 hover:-translate-y-2 rounded-sm'
+            className='transition duration-300 w-full lg:w-96 p-8 bg-gradient-to-br from-neutral-200 to-white shadow hover:shadow-lg -translate-y-0 hover:-translate-y-2 rounded'
             data-aos='fade-up'
             data-aos-delay='600'
           >
@@ -162,7 +162,7 @@ export default function LegendsClub() {
                 115 AED / annually
               </span>
             </h2>
-            <button className='transition duration-300 w-full px-8 py-3 border-2 border-black font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-black hover:bg-transparent rounded-sm'>
+            <button className='transition duration-300 w-full px-8 py-3 border-2 border-black font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-black hover:bg-transparent rounded'>
               BE A LEGEND
             </button>
             <ul className='pt-4 font-montserrat font-normal text-sm text-black'>

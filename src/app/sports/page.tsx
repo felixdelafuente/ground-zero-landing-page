@@ -55,7 +55,7 @@ export default function Sports() {
       {/* SPORTS SECTION */}
       <section className='my-16 w-full flex flex-col'>
         <div
-          className='mr-auto w-full lg:w-3/4 flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'
+          className='mr-auto w-full flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'
           data-aos='fade-right'
         >
           <Image
@@ -72,7 +72,7 @@ export default function Sports() {
                 LEGENDS BASKETBALL
               </h3>
               <p
-                className='pt-6 font-montserrat font-normal text-base rounded-sm text-white'
+                className='pt-6 font-montserrat font-normal text-base rounded text-white'
                 data-aos='fade-up'
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -102,7 +102,7 @@ export default function Sports() {
           </div>
         </div>
         <div
-          className='ml-auto my-16 w-full lg:w-3/4 flex flex-col-reverse lf:flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-l lg:from-black lg:to-transparent'
+          className='ml-auto my-16 w-full flex flex-col-reverse lf:flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-l lg:from-black lg:to-transparent'
           data-aos='fade-left'
         >
           <div className='flex flex-col justify-between md:h-80 lg:h-full lg:col-span-2 p-12'>
@@ -114,7 +114,7 @@ export default function Sports() {
                 BUOYANCY SPORTS
               </h3>
               <p
-                className='pt-6 font-montserrat font-normal text-base rounded-sm text-white'
+                className='pt-6 font-montserrat font-normal text-base rounded text-white'
                 data-aos='fade-up'
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -159,7 +159,7 @@ export default function Sports() {
           />
         </div>
         <div
-          className='mr-auto w-full lg:w-3/4 flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'
+          className='mr-auto w-full flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'
           data-aos='fade-right'
         >
           <Image
@@ -176,7 +176,7 @@ export default function Sports() {
                 FITNESS GROUND
               </h3>
               <p
-                className='pr-0 lg:pr-20 pt-6 font-montserrat font-normal text-base rounded-sm text-white'
+                className='pr-0 lg:pr-20 pt-6 font-montserrat font-normal text-base rounded text-white'
                 data-aos='fade-up'
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -212,7 +212,7 @@ export default function Sports() {
           </div>
         </div>
         <div
-          className='ml-auto my-16 w-full lg:w-3/4 flex flex-col-reverse lf:flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-l lg:from-black lg:to-transparent'
+          className='ml-auto my-16 w-full flex flex-col-reverse lf:flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-l lg:from-black lg:to-transparent'
           data-aos='fade-left'
         >
           <div className='flex flex-col justify-between md:h-80 lg:h-full lg:col-span-2 p-12'>
@@ -224,7 +224,7 @@ export default function Sports() {
                 SPIKE CLUB
               </h3>
               <p
-                className='pt-6 font-montserrat font-normal text-base rounded-sm text-white'
+                className='pt-6 font-montserrat font-normal text-base rounded text-white'
                 data-aos='fade-up'
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -266,7 +266,7 @@ export default function Sports() {
           />
         </div>
         <div
-          className='mr-auto w-full lg:w-3/4 flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'
+          className='mr-auto w-full flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'
           data-aos='fade-right'
         >
           <Image
@@ -283,7 +283,7 @@ export default function Sports() {
                 SMASH CLUB
               </h3>
               <p
-                className='pt-6 font-montserrat font-normal text-base rounded-sm text-white'
+                className='pt-6 font-montserrat font-normal text-base rounded text-white'
                 data-aos='fade-up'
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -299,10 +299,18 @@ export default function Sports() {
               </ul>
             </div>
             <div className='mt-8 flex text-white text-2xl' data-aos='fade-up'>
-              <Link href='#' target='_blank' className='px-2'>
+              <Link
+                href='https://www.facebook.com/smashclubuae'
+                target='_blank'
+                className='px-2'
+              >
                 <FaFacebook />
               </Link>
-              <Link href='#' target='_blank' className='px-2'>
+              <Link
+                href='https://www.instagram.com/smashclub_uae/'
+                target='_blank'
+                className='px-2'
+              >
                 <FaInstagram />
               </Link>
             </div>

@@ -32,40 +32,46 @@ export default function Home() {
         <Image
           src={Images.HeaderLeftTriangle}
           alt=''
-          className='pr-8 lg:pr-0 absolute w-full lg:w-7/12'
+          className='pr-8 lg:pr-0 absolute w-full lg:w-7/12 z-0'
           data-aos='fade-right'
         />
         <Image
           src={Images.HeaderRightTriangle}
           alt=''
-          className='hidden md:block absolute top-1/4 right-0 w-full lg:w-1/2'
+          className='hidden md:block absolute top-1/4 right-0 w-full lg:w-1/2 z-0'
           data-aos='fade-left'
         />
-        <div className='w-full lg:w-7/12 px-4 md:px-12 lg:px-32'>
+        <div className='w-full lg:w-3/4 px-4 md:px-12 lg:px-32'>
           <h1
             className='font-montserrat font-extrabold text-xl md:text-3xl lg:text-2xl text-white'
             data-aos='fade-right'
             data-aos-delay='300'
           >
-            UNLEASH YOUR EMPLOYEES&apos;
+            PEAK PRODUCTIVITY & PERFORMANCE
           </h1>
           <h1
             className='font-montserrat font-extrabold text-3xl md:text-6xl lg:text-6xl text-white'
             data-aos='fade-right'
             data-aos-delay='600'
           >
-            FULL POTENTIAL,
-            <br />
-            PRODUCTIVITY,
-            <br />& PERFORMANCE
+            UNLEASH YOUR EMPLOYEES&apos; POTENTIAL
           </h1>
           <h1
             className='font-montserrat font-extrabold text-xl md:text-3xl lg:text-2xl text-transparent text-stroke'
             data-aos='fade-right'
             data-aos-delay='900'
           >
-            WITH OUR TAILOR-MADE SPORTS AND WELLNESS PROGRAMS
+            THROUGH SPORTS AND WELLNESS ACTIVITIES
           </h1>
+          <Link href='https://forms.office.com/r/WrQDsc0UBi' target='_blank'>
+            <button
+              className='z-50 mt-4 transition duration-300 w-full lg:w-auto px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center hover:text-white text-black hover:bg-transparent bg-white rounded'
+              data-aos='fade-right'
+              data-aos-delay='1100'
+            >
+              BOOK A SPORTS ACTIVITY
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -78,21 +84,21 @@ export default function Home() {
           <Image
             src={Images.SportsEvent1}
             alt={"Various sports events"}
-            className='object-cover'
+            className='object-cover rounded'
             data-aos='fade-right'
             data-aos-delay='600'
           />
           <Image
             src={Images.SportsEvent2}
             alt={"Various sports events"}
-            className='object-cover'
+            className='object-cover rounded'
             data-aos='fade-right'
             data-aos-delay='300'
           />
           <Image
             src={Images.SportsEvent3}
             alt={"Various sports events"}
-            className='object-cover'
+            className='object-cover rounded'
             data-aos='fade-right'
           />
         </div>
@@ -112,7 +118,7 @@ export default function Home() {
             ACTIVITIES
           </h1>
           <p
-            className='pt-6 text-start lg:text-end font-montserrat font-normal text-base rounded-sm text-white'
+            className='pt-6 text-start lg:text-end font-montserrat font-normal text-base rounded text-white'
             data-aos='fade-up'
           >
             Supercharge your company&apos;s productivity and performance with
@@ -132,6 +138,30 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <div
+        className='z-50 px-0 mt-36 w-full h-60 object-center bg-center flex flex-col justify-center items-center'
+        style={{ backgroundImage: `url(${Images.DividerBg1.src})` }}
+      >
+        <h4
+          className='text-center font-montserrat font-extrabold text-xl md:text-2xl lg:text-3xl text-white'
+          data-aos='fade-up'
+        >
+          Start your corporate and wellness journey today!
+        </h4>
+        <Link
+          href='https://forms.office.com/r/WrQDsc0UBi'
+          target='_blank'
+          className='mt-4'
+        >
+          <button
+            className='z-50 mt-4 transition duration-300 w-full lg:w-auto px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center hover:text-white text-black hover:bg-transparent bg-white rounded'
+            data-aos='fade-up'
+          >
+            BOOK A SPORTS ACTIVITY
+          </button>
+        </Link>
+      </div>
 
       {/* SERVICES SECTION */}
       <section id='services' className='px-0 pt-36 w-full'>
@@ -159,19 +189,19 @@ export default function Home() {
           well-being, boost morale, and unlock their full potential.
         </p>
         <div className='pt-14'>
-          <Carousel className='relative h-auto lg:h-80 w-full overflow-hidden'>
+          <Carousel className='relative h-auto lg:h-1/2 w-full overflow-hidden'>
             {PrimaryServices.services.map((service) => {
               return (
                 <div
                   key={service.title}
                   className='h-full pl-0 lg:pl-20 shadow bg-gradient-to-br from-darkGray to-neutral-800 relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none'
                 >
-                  <div className='h-full w-full flex flex-col-reverse justify-end lg:justify-normal lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1'>
-                    <div className='md:h-80 lg:h-full lg:col-span-2 p-12'>
+                  <div className='h-full w-full flex flex-col-reverse justify-end lg:justify-normal lg:grid lg:grid-cols-2 lg:grid-flow-row lg:grid-rows-1'>
+                    <div className='md:h-80 lg:h-full lg:col-span-1 p-12'>
                       <h3 className='font-montserrat font-extrabold text-2xl md:text-3xl lg:text-3xl text-transparent text-stroke'>
                         {service.title}
                       </h3>
-                      <p className='pr-0 lg:pr-20 pt-6 font-montserrat font-normal text-base rounded-sm text-white'>
+                      <p className='pr-0 lg:pr-20 pt-6 font-montserrat font-normal text-2xl rounded text-white'>
                         {service.description}
                       </p>
                     </div>
@@ -241,6 +271,30 @@ export default function Home() {
         </div>
       </section>
 
+      <div
+        className='z-50 px-0 mt-36 w-full h-60 object-center bg-center flex flex-col justify-center items-center bg-blend-darken'
+        style={{ backgroundImage: `url(${Images.DividerBg2.src})` }}
+      >
+        <h4
+          className='z-50 text-center font-montserrat font-extrabold text-xl md:text-2xl lg:text-3xl text-white'
+          data-aos='fade-up'
+        >
+          Start your corporate and wellness journey today!
+        </h4>
+        <Link
+          href='https://forms.office.com/r/WrQDsc0UBi'
+          target='_blank'
+          className='mt-4'
+        >
+          <button
+            className='z-50 mt-4 transition duration-300 w-full lg:w-auto px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center hover:text-white text-black hover:bg-transparent bg-white rounded'
+            data-aos='fade-up'
+          >
+            BOOK A SPORTS ACTIVITY
+          </button>
+        </Link>
+      </div>
+
       {/* TESTIMONIALS SECTION */}
       <section id='services' className='mt-36 w-full'>
         <h1
@@ -263,15 +317,17 @@ export default function Home() {
                   className='px-0 md:px-2 lg:px-4 h-full flex flex-col lg:flex-row space-x-0 lg:space-x-20 space-y-10 lg:space-y-0'
                 >
                   <div
-                    className='mr-auto w-full lg:w-1/2 flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'
+                    className='mr-auto w-full lg:w-1/2 flex flex-col lg:grid lg:grid-flow-row lg:grid-rows-1 shadow '
                     data-aos='fade-right'
                   >
                     <Image
-                      className='object-cover object-center h-full'
+                      className='rounded absolute'
                       src={testimonial.image1}
                       alt={testimonial.person1}
+                      width={128}
+                      height={128}
                     />
-                    <div className='flex flex-col justify-start md:h-80 lg:h-full lg:col-span-2 p-12'>
+                    <div className='ml-16 flex flex-col justify-start md:h-80 lg:h-full p-12 bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'>
                       <Image
                         className='absolute right-0 top-0'
                         src={Images.EndQuote}
@@ -279,7 +335,7 @@ export default function Home() {
                         data-aos='fade-down'
                         data-aos-delay='100'
                       />
-                      <h3 className='font-montserrat' data-aos='fade-up'>
+                      <h3 className='ml-10 font-montserrat' data-aos='fade-up'>
                         <span className='font-extrabold text-lg md:text-xl text-white'>
                           {testimonial.person1}
                         </span>
@@ -290,7 +346,7 @@ export default function Home() {
                       </h3>
 
                       <p
-                        className='pt-6 font-montserrat font-normal text-sm text-white'
+                        className='pt-10 font-montserrat font-normal text-base text-white'
                         data-aos='fade-up'
                         data-aos-delay='300'
                       >
@@ -299,15 +355,17 @@ export default function Home() {
                     </div>
                   </div>
                   <div
-                    className='mr-auto w-full lg:w-1/2 flex flex-col lg:grid lg:grid-cols-3 lg:grid-flow-row lg:grid-rows-1 shadow bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent rounded-bl-3xl rounded-tl-3xl'
+                    className='mr-auto w-full lg:w-1/2 flex flex-col lg:grid lg:grid-flow-row lg:grid-rows-1 shadow '
                     data-aos='fade-left'
                   >
                     <Image
-                      className='object-cover object-center h-full'
+                      className='rounded absolute'
                       src={testimonial.image2}
                       alt={testimonial.person2}
+                      width={128}
+                      height={128}
                     />
-                    <div className='flex flex-col justify-start md:h-80 lg:h-full lg:col-span-2 p-12'>
+                    <div className='ml-16 flex flex-col justify-start md:h-80 lg:h-full p-12 bg-gradient-to-br from-darkGray to-neutral-800 lg:bg-gradient-to-r lg:from-black lg:to-transparent'>
                       <Image
                         className='absolute right-0 top-0'
                         src={Images.EndQuote}
@@ -315,7 +373,7 @@ export default function Home() {
                         data-aos='fade-down'
                         data-aos-delay='100'
                       />
-                      <h3 className='font-montserrat' data-aos='fade-up'>
+                      <h3 className='ml-10 font-montserrat' data-aos='fade-up'>
                         <span className='font-extrabold text-lg md:text-xl text-white'>
                           {testimonial.person2}
                         </span>
@@ -326,7 +384,7 @@ export default function Home() {
                       </h3>
 
                       <p
-                        className='pt-6 font-montserrat font-normal text-sm text-white'
+                        className='pt-10 font-montserrat font-normal text-base text-white'
                         data-aos='fade-up'
                         data-aos-delay='300'
                       >
@@ -399,7 +457,7 @@ export default function Home() {
           className='w-full lg:w-1/2 px-4 md:px-14 lg:px-32 py-16  bg-neutral-800'
           data-aos='fade-right'
         >
-          <form action='' className='flex flex-col'>
+          <div className='flex flex-col items-center'>
             <h4 className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-2xl text-white'>
               GOT QUESTIONS?
             </h4>
@@ -407,54 +465,13 @@ export default function Home() {
               Feel free to message us and share your thoughts! We’ll gladly
               answer any inquiries.
             </p>
-            <label
-              className='font-montserrat font-normal text-white mt-4 mb-2'
-              htmlFor='name'
-              data-aos='fade-up'
-            >
-              Name:
-            </label>
-            <input
-              className='font-montserrat font-normal text-base rounded-sm'
-              type='text'
-              name='name'
-              placeholder='Type your name'
-              data-aos='fade-up'
+            <Image
+              src={Images.QRCode}
+              alt={"https://forms.office.com/r/WrQDsc0UBi"}
+              className='mt-4 h-full w-full lg:h-72 lg:w-72'
+              data-aos='fade-right'
             />
-            <label
-              className='font-montserrat font-normal text-white mt-4 mb-2'
-              htmlFor='email'
-              data-aos='fade-up'
-            >
-              Email:
-            </label>
-            <input
-              className='font-montserrat font-normal text-base rounded-sm'
-              type='text'
-              name='email'
-              placeholder='Type your email so we can contact you'
-              data-aos='fade-up'
-            />
-            <label
-              className='font-montserrat font-normal text-white mt-4 mb-2'
-              htmlFor='message'
-              data-aos='fade-up'
-            >
-              Message:
-            </label>
-            <textarea
-              className='font-montserrat font-normal text-base rounded-sm'
-              name='message'
-              rows={5}
-              placeholder='Type your message for us'
-              data-aos='fade-up'
-            />
-            <div className='flex flex-row-reverse mt-4'>
-              <button className='transition duration-300 w-full lg:w-auto px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-transparent hover:bg-white rounded-sm'>
-                SEND
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
         <div className='w-full lg:w-1/2'>
           <Image

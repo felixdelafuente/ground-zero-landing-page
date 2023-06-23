@@ -65,47 +65,13 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* TEAM SECTION */}
-      <section className='pt-36 lg:pt-0 px-4 md:px-8 lg:px-32 w-full flex flex-col'>
-        <h1
-          className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-3xl text-white'
-          data-aos='fade-up'
-        >
-          MEET THE TEAM
-        </h1>
-        <div className='mt-14 w-full flex flex-wrap items-center justify-center'>
-          {CompanyMembers.members.map((member) => {
-            return (
-              <div
-                key={member.name}
-                className='w-auto px-8 py-4 flex flex-col justify-center items-center mx-0 my-4 md:m-4 lg:m-8'
-                data-aos='fade-up'
-              >
-                <Image
-                  src={member.profile.src}
-                  alt={member.name}
-                  width={128}
-                  height={128}
-                />
-                <h4 className='pt-2 font-montserrat font-extrabold text-base text-center text-white'>
-                  {member.name}
-                </h4>
-                <p className='font-montserrat font-normal text-sm text-center text-white'>
-                  {member.position}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
       {/* CONTACT FORM */}
       <section className='mt-36 w-full flex flex-col md:flex-row'>
         <div
           className='w-full lg:w-1/2 px-4 md:px-14 lg:px-32 py-16  bg-neutral-800'
           data-aos='fade-right'
         >
-          <form action='' className='flex flex-col'>
+          <div className='flex flex-col items-center'>
             <h4 className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-2xl text-white'>
               GOT QUESTIONS?
             </h4>
@@ -113,54 +79,13 @@ export default function ContactUs() {
               Feel free to message us and share your thoughts! We’ll gladly
               answer any inquiries.
             </p>
-            <label
-              className='font-montserrat font-normal text-white mt-4 mb-2'
-              htmlFor='name'
-              data-aos='fade-up'
-            >
-              Name:
-            </label>
-            <input
-              className='font-montserrat font-normal text-base rounded-sm'
-              type='text'
-              name='name'
-              placeholder='Type your name'
-              data-aos='fade-up'
+            <Image
+              src={Images.QRCode}
+              alt={"https://forms.office.com/r/WrQDsc0UBi"}
+              className='mt-4 h-full w-full lg:h-72 lg:w-72'
+              data-aos='fade-right'
             />
-            <label
-              className='font-montserrat font-normal text-white mt-4 mb-2'
-              htmlFor='email'
-              data-aos='fade-up'
-            >
-              Email:
-            </label>
-            <input
-              className='font-montserrat font-normal text-base rounded-sm'
-              type='text'
-              name='email'
-              placeholder='Type your email so we can contact you'
-              data-aos='fade-up'
-            />
-            <label
-              className='font-montserrat font-normal text-white mt-4 mb-2'
-              htmlFor='message'
-              data-aos='fade-up'
-            >
-              Message:
-            </label>
-            <textarea
-              className='font-montserrat font-normal text-base rounded-sm'
-              name='message'
-              rows={5}
-              placeholder='Type your message for us'
-              data-aos='fade-up'
-            />
-            <div className='flex flex-row-reverse mt-4'>
-              <button className='transition duration-300 w-full lg:w-auto px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-transparent hover:bg-white rounded-sm'>
-                SEND
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
         <div className='w-full lg:w-1/2'>
           <Image
