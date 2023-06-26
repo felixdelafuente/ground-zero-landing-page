@@ -13,7 +13,7 @@ export default function Navbar() {
         <div>
           <div className='flex items-center justify-between py-2 md:py-4 md:block'>
             <Link href='/'>
-              <Image src={Images.LogoSm} alt='Ground Zero Logo' height={36} />
+              <Image src={Images.LogoSm} alt='Ground Zero Logo' height={24} className='my-1' />
             </Link>
             <div className='md:hidden'>
               <button

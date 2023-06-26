@@ -26,12 +26,51 @@ export default function LegendsClub() {
         </h1>
       </section>
 
+      {/* MISSION VISION SECTION */}
+      <section className='px-4 md:px-8 lg:px-32 pt-36 w-full flex flex-col lg:flex-row space-x-0 lg:space-x-16'>
+        <div className='w-full lg:w-1/2 flex flex-col'>
+          <h1
+            className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-3xl text-white'
+            data-aos='fade-up'
+            data-aos-delay='300'
+          >
+            MISSION
+          </h1>
+          <p
+            className='pt-6 font-montserrat font-normal text-2xl rounded text-white text-center'
+            data-aos='fade-up'
+            data-aos-delay='300'
+          >
+            Provide all unserved & untap market equality and access to healthy
+            activities through sports
+          </p>
+        </div>
+        <div className='w-full lg:w-1/2 flex flex-col'>
+          <h1
+            className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-3xl text-white'
+            data-aos='fade-up'
+            data-aos-delay='600'
+          >
+            VISION
+          </h1>
+          <p
+            className='pt-6 font-montserrat font-normal text-2xl rounded text-white text-center'
+            data-aos='fade-up'
+            data-aos-delay='600'
+          >
+            ZEROR TO LEGEND. We believe and envision that every one regardless
+            of age, gender preferences and identity, has the potential to become
+            a legend. Not only becoming better of themselves but to ultimately
+            exceed their utmost potentials
+          </p>
+        </div>
+      </section>
+
       {/* PARTNERS SECTION */}
       <section className='px-4 md:px-8 lg:px-32 pt-36 w-full flex flex-col'>
         <h1
           className='text-center font-montserrat font-extrabold text-xl md:text-3xl lg:text-3xl text-white'
           data-aos='fade-up'
-          data-aos-delay='300'
         >
           MEET OUR PARTNERS
         </h1>
@@ -52,8 +91,8 @@ export default function LegendsClub() {
                     <Image
                       src={partner.logo.src}
                       alt={partner.name}
-                      width={96}
-                      height={96}
+                      width={148}
+                      height={148}
                     />
                   </Link>
                 </Tooltip>
@@ -95,9 +134,15 @@ export default function LegendsClub() {
                 96 AED / annually
               </span>
             </h2>
-            <button className='transition duration-300 w-full px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-transparent hover:bg-white rounded'>
-              BE A LEGEND
-            </button>
+            <Link
+              href='https://docs.google.com/forms/d/e/1FAIpQLSeJbS86kLydyKaqP1SrJD1S-kzM28t-qnmT22KcGKhvb4bLJQ/viewform?fbclid=IwAR2Uu1ubf28dS-JD1jVoG_0nlM6X3OTBTp2AuaidZIIJNBgYX8roFJV10M0'
+              target='_blank'
+            >
+              <button className='transition duration-300 w-full px-8 py-3 border-2 border-white font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-transparent hover:bg-white rounded'>
+                BE A LEGEND
+              </button>
+            </Link>
+
             <ul className='pt-4 font-montserrat font-normal text-sm text-white'>
               <li className='flex items-start py-2'>
                 <FaCheckCircle className='w-1/12 mt-1 text-green-500' />
@@ -152,7 +197,7 @@ export default function LegendsClub() {
               bigger discounts and more access to facilities.
             </p>
             <h2 className='pt-6 font-montserrat'>
-              <span className='font-bold text-4xl text-black  '>10 AED</span>{" "}
+              <span className='font-bold text-4xl text-black  '>12 AED</span>{" "}
               <span className='font-normal text-base text-neutral-700'>
                 / month
               </span>
@@ -162,9 +207,15 @@ export default function LegendsClub() {
                 115 AED / annually
               </span>
             </h2>
-            <button className='transition duration-300 w-full px-8 py-3 border-2 border-black font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-black hover:bg-transparent rounded'>
-              BE A LEGEND
-            </button>
+            <Link
+              href='https://docs.google.com/forms/d/e/1FAIpQLSeJbS86kLydyKaqP1SrJD1S-kzM28t-qnmT22KcGKhvb4bLJQ/viewform?fbclid=IwAR2Uu1ubf28dS-JD1jVoG_0nlM6X3OTBTp2AuaidZIIJNBgYX8roFJV10M0'
+              target='_blank'
+            >
+              <button className='transition duration-300 w-full px-8 py-3 border-2 border-black font-montserrat font-semibold text-sm text-center text-white hover:text-black bg-black hover:bg-transparent rounded'>
+                BE A LEGEND
+              </button>
+            </Link>
+
             <ul className='pt-4 font-montserrat font-normal text-sm text-black'>
               <li className='flex items-start py-2'>
                 <FaCheckCircle className='w-1/12 mt-1 text-green-500' />

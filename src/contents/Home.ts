@@ -50,22 +50,27 @@ export const SpecialServices = {
     {
       title: `SPORTS ACADEMY`,
       description: `Our sports academy provides specialized training in various sports for children, youth, females, and males, offering personalized coaching to improve skills and physical abilities. Additionally, academic support in the form of tutoring and homework assistance is also available.`,
+      image: Images.SportsAcademy
     },
     {
       title: `LEAGUES FOR SCHOOLS, UNIVERISTIES & ACADEMIES`,
       description: `Our organization hosts leagues for educational institutions and academies, giving young athletes the opportunity to compete and display their abilities while promoting fair play and sportsmanship in a safe environment.`,
+      image: Images.League
     },
     {
       title: `ORGANIZING PUBLIC EVENTS`,
       description: `We coordinate public events such as sports festivals, charity events, and races with the aim of fostering community unity and encouraging a healthy and active lifestyle. Our events are inclusive and open to individuals of all skill levels and backgrounds.`,
+      image: Images.PublicEvents
     },
     {
       title: `RACE TIMING & MANAGEMENT`,
       description: `We offer comprehensive race timing and management services for running, cycling, and triathlon events. With advanced timing equipment and a skilled team, we prioritize safety and efficiency, ensuring accurate timing and reliable results for our races.`,
+      image: Images.RaceTiming
     },
     {
       title: `PERFORMANCE COACHING / PERSONAL COACHING`,
       description: `Ground Zero offers specialized performance coaching designed for employees of organizations, focusing on areas such as sports, career, and personal development. Their skilled team helps individuals overcome obstacles, set meaningful goals, and achieve exceptional results, enabling personal and professional growth through tailored coaching services.`,
+      image: Images.PerformanceCoaching
     },
   ],
 };

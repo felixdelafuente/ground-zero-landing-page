@@ -260,6 +260,7 @@ export default function Home() {
                       leaveTo='transform scale-95 opacity-0'
                     >
                       <Disclosure.Panel className='px-8 mb-8 text-white text-base font-montserrat'>
+                        <Image src={service.image} alt={""} className='mb-4' />
                         {service.description}
                       </Disclosure.Panel>
                     </Transition>
@@ -471,6 +472,10 @@ export default function Home() {
               className='mt-4 h-full w-full lg:h-72 lg:w-72'
               data-aos='fade-right'
             />
+            <p className='mt-4 font-montserrat font-normal text-center text-base text-white'>
+              You can call us at <u>+971 56 430 8379</u> or email us at{" "}
+              <u>play@verzuzmatch.com</u>.
+            </p>
           </div>
         </div>
         <div className='w-full lg:w-1/2'>

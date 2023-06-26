@@ -63,7 +63,7 @@ export const Partners = {
       link: `https://www.facebook.com/xoxoeventsmgmt`,
     },
     {
-      logo: Images.PartnerFIPA,
+      logo: Images.PartnerPFA,
       name: `PFA`,
       link: `https://www.facebook.com/personalfinanceadvisers?mibextid=LQQJ4d`,
     },

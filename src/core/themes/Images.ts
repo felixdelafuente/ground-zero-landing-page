@@ -23,10 +23,10 @@ import BodyRightTriangle from "src/assets/images/body-right-triangle.png";
 import SportsEvent1 from "src/assets/images/sports-event-1.png";
 import SportsEvent2 from "src/assets/images/sports-event-2.png";
 import SportsEvent3 from "src/assets/images/sports-event-3.png";
-import Sports1 from "src/assets/images/sports-1.png";
-import Sports2 from "src/assets/images/sports-2.png";
+import Sports1 from "src/assets/images/sports-1.jpg";
+import Sports2 from "src/assets/images/sports-2.jpg";
 import Sports3 from "src/assets/images/sports-3.png";
-import Sports4 from "src/assets/images/sports-4.png";
+import Sports4 from "src/assets/images/sports-4.jpg";
 import Sports5 from "src/assets/images/sports-5.png";
 import TeamMember1 from "src/assets/images/team-member-1.png";
 import TeamMember2 from "src/assets/images/team-member-2.png";
@@ -59,6 +59,11 @@ import AboutUsSlide6 from "src/assets/images/about-us-slide-6.png";
 import DividerBg1 from "src/assets/images/divider-bg-1.png";
 import DividerBg2 from "src/assets/images/divider-bg-2.png";
 import QRCode from "src/assets/images/qr-code.png";
+import SportsAcademy from "src/assets/images/sports-academy-img.png";
+import League from "src/assets/images/league-img.png";
+import PublicEvents from "src/assets/images/public-events-img.png";
+import RaceTiming from "src/assets/images/race-timing-img.png";
+import PerformanceCoaching from "src/assets/images/performance-coaching-img.png";
 
 export const Images = {
   LogoSm,
@@ -122,4 +127,9 @@ export const Images = {
   DividerBg1,
   DividerBg2,
   QRCode,
+  SportsAcademy,
+  League,
+  PublicEvents,
+  RaceTiming,
+  PerformanceCoaching,
 };
